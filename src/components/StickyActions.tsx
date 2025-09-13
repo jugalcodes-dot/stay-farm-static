@@ -2,10 +2,10 @@ import { Phone, MessageCircle, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const StickyActions = () => {
-  const phoneNumber = "+91-9876543210";
-  const whatsappNumber = "919876543210";
-  const whatsappMessage = "Hi! I'm interested in booking your farmhouse. Please share availability and pricing.";
-  const mapsUrl = "https://maps.google.com/?q=28.4595,77.0266"; // Delhi coordinates as placeholder
+  const phoneNumber = "+91 99989 07887";
+  const whatsappNumber = "919998907887";
+  const whatsappMessage = "Hi! I'm interested in booking Khushi Farm. Please share availability and pricing.";
+  const mapsUrl = "https://www.google.com/maps/?q=22.070234,73.265417";
 
   return (
     <>
@@ -15,7 +15,7 @@ const StickyActions = () => {
           <Button
             variant="outline"
             size="sm"
-            className="flex-1 flex items-center gap-2"
+            className="flex-1 flex items-center gap-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground"
             asChild
           >
             <a href={`tel:${phoneNumber}`}>
@@ -57,7 +57,7 @@ const StickyActions = () => {
       <div className="fixed bottom-6 right-6 z-50 hidden md:flex flex-col gap-3">
         <Button
           size="lg"
-          className="w-14 h-14 rounded-full bg-[#25D366] hover:bg-[#25D366]/90 shadow-lg"
+          className="w-14 h-14 rounded-full bg-[#25D366] hover:bg-[#25D366]/90 shadow-card hover:shadow-hero transition-all duration-300 hover:-translate-y-1"
           asChild
         >
           <a 
@@ -73,7 +73,7 @@ const StickyActions = () => {
         <Button
           variant="outline"
           size="lg"
-          className="w-14 h-14 rounded-full shadow-lg"
+          className="w-14 h-14 rounded-full shadow-card hover:shadow-hero transition-all duration-300 hover:-translate-y-1 border-primary text-primary hover:bg-primary hover:text-primary-foreground"
           asChild
         >
           <a href={`tel:${phoneNumber}`} aria-label="Call us">

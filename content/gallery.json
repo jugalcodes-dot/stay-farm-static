@@ -1,0 +1,50 @@
+[
+  {
+    "id": "hero-view",
+    "title": "Khushi Farm Overview",
+    "description": "Aerial view of the complete farmhouse property",
+    "image": "/assets/farmhouse-hero.jpg",
+    "alt": "Beautiful Khushi Farm property with pool, lawn and buildings",
+    "category": "exterior"
+  },
+  {
+    "id": "swimming-pool",
+    "title": "Swimming Pool Area",
+    "description": "Crystal clear swimming pool with deck chairs",
+    "image": "/assets/swimming-pool.jpg", 
+    "alt": "Swimming pool area with surrounding deck and seating",
+    "category": "pool"
+  },
+  {
+    "id": "outdoor-dining",
+    "title": "Outdoor Dining Space",
+    "description": "Elegant outdoor dining area under the open sky",
+    "image": "/assets/outdoor-dining.jpg",
+    "alt": "Outdoor dining setup with tables and ambient lighting",
+    "category": "dining"
+  },
+  {
+    "id": "lawn-area",
+    "title": "Spacious Lawn",
+    "description": "Large green lawn perfect for outdoor activities",
+    "image": "/assets/farmhouse-hero.jpg",
+    "alt": "Expansive green lawn area for recreational activities",
+    "category": "lawn"
+  },
+  {
+    "id": "interior",
+    "title": "Interior Spaces",
+    "description": "Comfortable and well-appointed interior rooms",
+    "image": "/assets/outdoor-dining.jpg",
+    "alt": "Well-furnished interior spaces with modern amenities",
+    "category": "interior"
+  },
+  {
+    "id": "games-area", 
+    "title": "Games & Recreation",
+    "description": "Indoor games room with various entertainment options",
+    "image": "/assets/swimming-pool.jpg",
+    "alt": "Games room with carrom, chess and other indoor games",
+    "category": "games"
+  }
+]

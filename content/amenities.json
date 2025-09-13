@@ -1,0 +1,50 @@
+[
+  {
+    "id": "private-pool",
+    "title": "Private Pool", 
+    "description": "Crystal clear swimming pool with safety features",
+    "icon": "Waves"
+  },
+  {
+    "id": "large-lawn",
+    "title": "Large Lawn",
+    "description": "Sprawling green lawn perfect for outdoor activities",
+    "icon": "TreePine"
+  },
+  {
+    "id": "indoor-games", 
+    "title": "Indoor Games",
+    "description": "Carrom, chess, ludo & more entertainment options",
+    "icon": "Gamepad2"
+  },
+  {
+    "id": "bbq-setup",
+    "title": "BBQ & Kitchen",
+    "description": "Fully equipped outdoor BBQ and modern kitchen",
+    "icon": "ChefHat"
+  },
+  {
+    "id": "power-backup",
+    "title": "Power Backup",
+    "description": "Uninterrupted electricity with generator backup",
+    "icon": "Zap"
+  },
+  {
+    "id": "free-parking",
+    "title": "Free Parking", 
+    "description": "Ample secure parking space for all vehicles",
+    "icon": "Car"
+  },
+  {
+    "id": "wifi",
+    "title": "High-Speed WiFi",
+    "description": "Complimentary high-speed internet connectivity",
+    "icon": "Wifi"
+  },
+  {
+    "id": "event-space",
+    "title": "Event Space",
+    "description": "Perfect venue for celebrations and gatherings",
+    "icon": "Users"
+  }
+]

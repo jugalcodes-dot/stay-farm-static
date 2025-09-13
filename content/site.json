@@ -1,0 +1,49 @@
+{
+  "name": "Khushi Farm",
+  "tagline": "Premium Farmhouse Experience",
+  "description": "Experience luxury farmhouse stays and day picnics with private pool, large lawn, and premium amenities in Kayavarohan, Vadodara, Gujarat.",
+  "location": {
+    "city": "Kayavarohan",
+    "state": "Vadodara, Gujarat",
+    "address": "Kayavarohan Jiyatalavdi Rd, Kayavarohan, Gujarat 391220",
+    "coordinates": {
+      "lat": 22.070234,
+      "lng": 73.265417
+    },
+    "directionsUrl": "https://www.google.com/maps/?q=22.070234,73.265417"
+  },
+  "contact": {
+    "phone": "+91 99989 07887",
+    "whatsapp": "919998907887",
+    "email": "info@khushifarm.in",
+    "whatsappUrl": "https://wa.me/919998907887"
+  },
+  "capacity": {
+    "overnight": 25,
+    "dayPicnic": {
+      "min": 10,
+      "max": 40
+    }
+  },
+  "timing": {
+    "checkIn": "3:00 PM",
+    "checkOut": "11:00 AM",
+    "dayPicnic": "10:00 AM - 6:00 PM",
+    "musicTill": "10:00 PM"
+  },
+  "policies": {
+    "pets": "Allowed on request",
+    "smoking": "Designated areas only",
+    "alcohol": "Allowed",
+    "music": "Till 10:00 PM"
+  },
+  "social": {
+    "instagram": "",
+    "facebook": ""
+  },
+  "business": {
+    "gst": "GST: XXXXXXXXXXXXXXXXX",
+    "cin": "CIN: XXXXXXXXXXXXXXXXX"
+  },
+  "googlePlaceId": ""
+}

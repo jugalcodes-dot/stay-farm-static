@@ -2,63 +2,71 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Farmhouse Rental Design System - Warm, Natural, Conversion-Focused */
+/* Khushi Farm - Premium Farmhouse Design System */
 
 @layer base {
   :root {
-    /* Core Brand Colors - Warm Earth Tones */
-    --background: 35 15% 98%;
-    --foreground: 25 15% 15%;
+    /* Premium Color Palette - Sophisticated Earth Tones */
+    --background: 42 20% 97%;
+    --foreground: 24 15% 12%;
 
     --card: 0 0% 100%;
-    --card-foreground: 25 15% 15%;
+    --card-foreground: 24 15% 12%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 25 15% 15%;
+    --popover-foreground: 24 15% 12%;
 
-    /* Primary: Rich Forest Green for CTAs */
-    --primary: 142 45% 25%;
+    /* Primary: Deep Forest Green - Premium & Trust */
+    --primary: 145 50% 22%;
     --primary-foreground: 0 0% 98%;
-    --primary-hover: 142 45% 20%;
+    --primary-hover: 145 50% 18%;
 
-    /* Secondary: Warm Sage for accents */
-    --secondary: 120 15% 85%;
-    --secondary-foreground: 25 15% 15%;
+    /* Secondary: Warm Sage - Elegant Accents */
+    --secondary: 118 20% 82%;
+    --secondary-foreground: 24 15% 12%;
 
-    /* Muted: Soft cream tones */
-    --muted: 35 25% 95%;
-    --muted-foreground: 25 8% 45%;
+    /* Muted: Warm Cream - Sophisticated Neutrals */
+    --muted: 42 25% 94%;
+    --muted-foreground: 24 8% 48%;
 
-    /* Accent: Warm terracotta for highlights */
-    --accent: 15 65% 88%;
-    --accent-foreground: 25 15% 15%;
+    /* Accent: Golden Terracotta - Premium Highlights */
+    --accent: 28 45% 85%;
+    --accent-foreground: 24 15% 12%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 35 15% 88%;
-    --input: 35 15% 90%;
-    --ring: 142 45% 25%;
+    --border: 42 15% 86%;
+    --input: 42 15% 88%;
+    --ring: 145 50% 22%;
 
-    /* Farmhouse Specific Colors */
-    --nature-green: 120 35% 35%;
-    --warm-brown: 25 35% 45%;
-    --cream: 35 25% 95%;
-    --sage: 120 15% 75%;
+    /* Premium Brand Colors */
+    --nature-green: 145 45% 25%;
+    --warm-brown: 28 45% 35%;
+    --cream: 42 25% 94%;
+    --sage: 118 20% 70%;
+    --gold: 45 65% 75%;
 
-    /* Gradients for hero sections */
-    --gradient-hero: linear-gradient(135deg, hsl(142 45% 25%) 0%, hsl(120 35% 35%) 100%);
-    --gradient-subtle: linear-gradient(180deg, hsl(35 25% 98%) 0%, hsl(35 15% 95%) 100%);
-    --gradient-warm: linear-gradient(135deg, hsl(35 25% 95%) 0%, hsl(15 25% 92%) 100%);
+    /* Premium Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(145 50% 22%) 0%, hsl(145 45% 25%) 50%, hsl(120 40% 30%) 100%);
+    --gradient-subtle: linear-gradient(180deg, hsl(42 25% 97%) 0%, hsl(42 20% 94%) 100%);
+    --gradient-warm: linear-gradient(135deg, hsl(42 25% 94%) 0%, hsl(28 25% 90%) 100%);
+    --gradient-premium: linear-gradient(135deg, hsl(145 50% 22%) 0%, hsl(45 55% 65%) 100%);
 
-    /* Shadows */
-    --shadow-soft: 0 4px 20px -4px hsl(25 15% 15% / 0.1);
-    --shadow-card: 0 8px 30px -8px hsl(25 15% 15% / 0.12);
-    --shadow-hero: 0 20px 60px -20px hsl(142 45% 25% / 0.3);
+    /* Premium Shadows & Glows */
+    --shadow-soft: 0 4px 25px -5px hsl(24 15% 12% / 0.08);
+    --shadow-card: 0 10px 35px -10px hsl(24 15% 12% / 0.12);
+    --shadow-hero: 0 25px 70px -25px hsl(145 50% 22% / 0.35);
+    --shadow-glow: 0 0 40px hsl(145 50% 22% / 0.15);
 
-    /* Animations */
-    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    /* Cursor Glow Effect */
+    --glow-rgb: 60, 118, 75;
+    --glow-size: 300px;
+
+    /* Premium Animations */
+    --transition-smooth: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    --transition-spring: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
     --radius: 0.75rem;
 
@@ -108,9 +116,10 @@
     @apply bg-background text-foreground font-sans antialiased;
   }
 
-  /* Smooth scrolling for anchor links */
+  /* Smooth scrolling for anchor links with offset */
   html {
     scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
   }
 
   /* Hide scrollbar but keep functionality */
@@ -121,10 +130,25 @@
   .hide-scrollbar::-webkit-scrollbar {
     display: none;
   }
+
+  /* Reduced motion preferences */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+    
+    html {
+      scroll-behavior: auto;
+    }
+  }
 }
 
 @layer components {
-  /* Hero gradient backgrounds */
+  /* Premium gradient backgrounds */
   .bg-hero-gradient {
     background: var(--gradient-hero);
   }
@@ -137,7 +161,11 @@
     background: var(--gradient-warm);
   }
 
-  /* Shadow utilities */
+  .bg-premium-gradient {
+    background: var(--gradient-premium);
+  }
+
+  /* Premium shadow utilities */
   .shadow-soft {
     box-shadow: var(--shadow-soft);
   }
@@ -150,6 +178,10 @@
     box-shadow: var(--shadow-hero);
   }
 
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
+  }
+
   /* Transition utilities */
   .transition-smooth {
     transition: var(--transition-smooth);
@@ -159,25 +191,110 @@
     transition: var(--transition-bounce);
   }
 
-  /* Custom button styles */
-  .btn-primary {
-    @apply bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-3 rounded-2xl font-semibold transition-smooth shadow-soft hover:shadow-card;
-  }
-  
-  .btn-secondary {
-    @apply bg-secondary hover:bg-secondary/80 text-secondary-foreground px-6 py-3 rounded-2xl font-semibold transition-smooth border border-border;
+  .transition-spring {
+    transition: var(--transition-spring);
   }
 
-  /* Card styles */
-  .card-farmhouse {
-    @apply bg-card rounded-2xl shadow-card border border-border p-6 transition-smooth hover:shadow-hero;
+  /* Scroll margin for sections */
+  .scroll-offset {
+    scroll-margin-top: 6rem;
   }
 
-  /* Text utilities */
+  @media (min-width: 768px) {
+    .scroll-offset {
+      scroll-margin-top: 7rem;
+    }
+  }
+
+  /* Cursor glow effect for cards */
+  .cursor-glow {
+    position: relative;
+    border-radius: 1rem;
+    overflow: hidden;
+  }
+
+  .cursor-glow::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: inherit;
+    padding: 1px;
+    background: linear-gradient(135deg, 
+      rgba(var(--glow-rgb), 0.1) 0%, 
+      rgba(var(--glow-rgb), 0.05) 50%, 
+      rgba(var(--glow-rgb), 0.1) 100%);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: xor;
+    -webkit-mask-composite: xor;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .cursor-glow:hover::before {
+    opacity: 1;
+  }
+
+  /* Premium card styles */
+  .card-premium {
+    @apply bg-card rounded-2xl shadow-card border border-border p-6 transition-spring hover:shadow-hero cursor-glow;
+  }
+
+  /* Premium button styles */
+  .btn-premium {
+    @apply bg-primary hover:bg-primary-hover text-primary-foreground px-8 py-4 rounded-2xl font-semibold transition-spring shadow-soft hover:shadow-hero hover:-translate-y-0.5;
+  }
+
+  /* Text gradient utilities */
   .text-gradient {
     background: var(--gradient-hero);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+  }
+
+  .text-premium-gradient {
+    background: var(--gradient-premium);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Loading spinner - house icon */
+  .house-loader {
+    animation: house-bounce 1.5s ease-in-out infinite;
+  }
+
+  @keyframes house-bounce {
+    0%, 100% { 
+      transform: translateY(0) scale(1);
+      opacity: 1;
+    }
+    50% { 
+      transform: translateY(-10px) scale(1.05);
+      opacity: 0.8;
+    }
+  }
+
+  /* Navbar blur effect */
+  .navbar-blur {
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    background: rgba(255, 255, 255, 0.8);
+    border-bottom: 1px solid hsl(var(--border));
+  }
+
+  /* Back to top fab positioning */
+  .back-to-top-fab {
+    right: 1rem;
+    bottom: calc(env(safe-area-inset-bottom) + 6rem);
+  }
+
+  @media (min-width: 768px) {
+    .back-to-top-fab {
+      right: 1.5rem;
+    }
   }
 }

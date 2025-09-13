@@ -1,0 +1,72 @@
+[
+  {
+    "id": "overnight-stay",
+    "title": "Overnight Stay",
+    "description": "Complete farmhouse experience with luxury amenities",
+    "price": "₹12,000/night",
+    "originalPrice": "₹15,000/night",
+    "duration": "24 hours",
+    "capacity": "Up to 25 guests",
+    "popular": true,
+    "features": [
+      "Private pool access",
+      "All rooms & luxury amenities",
+      "BBQ & fully equipped kitchen",
+      "Indoor & outdoor games",
+      "Large lawn area",
+      "Free parking & high-speed WiFi",
+      "24/7 caretaker assistance",
+      "Power backup facility"
+    ],
+    "image": "/assets/farmhouse-hero.jpg",
+    "imageAlt": "Beautiful Khushi Farm with pool and lush gardens",
+    "ctaText": "Book Stay",
+    "timing": "Check-in 3 PM, Check-out 11 AM"
+  },
+  {
+    "id": "day-picnic",
+    "title": "Day Picnic",
+    "description": "Fun-filled day experience for groups and families",
+    "price": "₹600/person",
+    "originalPrice": "₹800/person",
+    "duration": "10 AM - 6 PM",
+    "capacity": "10-40 guests",
+    "features": [
+      "Pool & lawn access",
+      "Indoor games room",
+      "BBQ setup available",
+      "Music system till 6 PM",
+      "Free parking",
+      "Basic refreshments included",
+      "Photography spots",
+      "Changing rooms available"
+    ],
+    "image": "/assets/swimming-pool.jpg",
+    "imageAlt": "Swimming pool and recreational area at Khushi Farm",
+    "ctaText": "Book Picnic",
+    "timing": "8 hours of unlimited fun"
+  },
+  {
+    "id": "sunset-evening",
+    "title": "Sunset Evening",
+    "description": "Magical evening experience with hi-tea and live BBQ",
+    "price": "₹800/person",
+    "originalPrice": "₹1000/person", 
+    "duration": "4 PM - 10 PM",
+    "capacity": "8-25 guests",
+    "features": [
+      "Sunset pool access",
+      "Hi-tea & evening snacks",
+      "Live BBQ arrangements",
+      "Music till 10 PM",
+      "Bonfire setup (seasonal)",
+      "Photography session",
+      "Ambient lighting",
+      "Premium seating arrangements"
+    ],
+    "image": "/assets/outdoor-dining.jpg",
+    "imageAlt": "Evening outdoor dining setup at Khushi Farm",
+    "ctaText": "Book Evening",
+    "timing": "6 hours of premium evening experience"
+  }
+]
